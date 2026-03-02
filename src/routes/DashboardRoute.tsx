@@ -54,7 +54,7 @@ const DashboardRoute = () => {
     <div className="flex">
       <Sitebar />
       <div
-        className={`${collepsed ? 'w-full' : 'w-[78%]'} duration-300 mt-12 h-screen overflow-y-auto`}
+        className={`${collepsed ? 'w-full' : 'w-[78%]'} duration-300 mb-13!  h-screen overflow-y-auto`}
       >
         <Header />
         <Routes>

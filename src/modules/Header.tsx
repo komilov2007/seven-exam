@@ -30,7 +30,7 @@ const Header = () => {
     }, 1500);
   }
   return (
-    <div className="bg-[#031529] fixed z-1 mt-[-48px]! w-300! p-4 flex items-center justify-between">
+    <div className="bg-[#031529] fixed z-1 mt-! w-300! p-4 flex items-center justify-between">
       <Button
         onClick={() => setCollepsed(!collepsed)}
         className="bg-transparent! border! border-white!"

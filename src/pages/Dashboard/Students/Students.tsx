@@ -94,7 +94,7 @@ const Students = () => {
   ];
 
   return (
-    <div className="p-5">
+    <div className="p-5 mt-15!">
       <Caption
         title="Students"
         count={students.length}

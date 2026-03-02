@@ -65,7 +65,7 @@ const TeachersPage = () => {
   ];
 
   return (
-    <div className="p-5">
+    <div className="p-5 mt-15!">
       <Caption
         title="Teachers"
         count={teachers.length}
