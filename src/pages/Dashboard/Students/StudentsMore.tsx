@@ -61,32 +61,41 @@ const StudentsMore = () => {
           </Button>
         </div>
       </div>
-      <div className="p-5 mb-10 flex justify-between border mt-5 border-slate-400 rounded-xl w-[50%]">
+      <div className="p-5 m flex flex-col justify-between border items-center ml-60 w! h-78! mt-5 border-slate-400 rounded-xl w-[50%]">
+        <strong className="text-[30px]">More</strong>
         <ul className=" flex flex-col gap-5 ">
-          <li className="flex flex-col">
-            <span className="text-[10px] text-slate-400">#ID</span>
-            <strong>{data.id}</strong>
+          <li className="flex items-center  border-t-4">
+            <span className="mr-10 ml-8">Id</span>
+            <li className="flex text-[20px] gap-2">
+              <strong>{data.id}</strong>
+            </li>
           </li>
-          <li className="flex flex-col">
-            <span className="text-[10px] text-slate-400">Name</span>
-            <li className="flex gap-2">
+          <li className="flex items-center border-t-4">
+            <span className="mr-10 ml-2">Name</span>
+            <li className="flex text-[20px] gap-2">
               <strong>{data.firstName}</strong>
               <strong>{data.lastName}</strong>
             </li>
           </li>
-          <li className="flex flex-col">
-            <span className="text-[10px] text-slate-400">Email</span>
+
+          <li className="flex  text-[20px] gap-2 border-t-4">
+            <span className="mr-10">Email</span>
             <strong>{data.email}</strong>
           </li>
         </ul>
-        <ul className=" flex flex-col gap-5 ">
-          <li className="flex flex-col">
-            <span className="text-[10px] text-slate-400">Create At</span>
-            <strong>{FormatDate(data.createdAt)}</strong>
+        <ul className=" flex flex-col gap-5 border-t-4 mt-2">
+          <li className="flex items-center text-[20px]">
+            <span className="mr-10">CReate at</span>
+            <li className="flex text-[20px] gap-2">
+              <strong>{data.createdAt}</strong>
+            </li>
           </li>
-          <li className="flex flex-col">
-            <span className="text-[10px] text-slate-400">Updated At</span>
-            <strong>{FormatDate(data.updatedAt)}</strong>
+
+          <li className="flex items-center text-[20px] border-t-4 mb-2!">
+            <span className="mr-10">Update At </span>
+            <li className="flex text-[20px] gap-2">
+              <strong>{FormatDate(data.updatedAt)}</strong>
+            </li>
           </li>
         </ul>
       </div>
