@@ -35,12 +35,12 @@ const Stacks = () => {
         size="large"
         placeholder="Search by name"
       />
-      <ul className="flex mt-5 flex-wrap gap-5">
+      <ul className="flex grid grid-cols-3 mt-5 flex-wrap gap-5">
         {isLoading
           ? 'Loading...'
           : stacks.map((item) => (
               <Card
-                className="border! cursor-pointer border-black!"
+                className="border! w-90! cursor-pointer border-black!"
                 key={item.id}
                 title={item.name}
                 extra={
